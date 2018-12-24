@@ -1,0 +1,26 @@
+[google]
+redirect_url = "http://localhost:1212/google/callback"
+client_id = ""
+client_secret = ""
+scopes_login = "https://www.googleapis.com/auth/plus.login"
+scopes_email = "https://www.googleapis.com/auth/plus.profile.emails.read"
+scopes_openid = "https://www.googleapis.com/auth/plus.me"
+
+
+[database]
+host = "localhost"
+port = 5432
+name = "gosok"
+sslmode = "disable"
+sslcert = "certs/client.root.crt"
+sslrootcert= "certs/ca.crt"
+sslkey = "certs/client.root.key"
+username = "postgres"
+password = ""
+
+[session]
+key = ""
+domain = "localhost"
+path = "/"
+max_age = 900
+http_only = true
